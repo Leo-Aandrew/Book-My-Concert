@@ -63,8 +63,6 @@
 }
 
 
-
-/* ✅ Mobile Responsive Enhancements */
 @media (max-width: 768px) {
   .concert-card {
     max-width: 90%;

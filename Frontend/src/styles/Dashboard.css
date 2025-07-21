@@ -13,7 +13,7 @@
   color: #ffffff;
 }
 
-/* Tabs */
+
 .tab-buttons {
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@
   font-weight: bold;
 }
 
-/* Content */
+
 .tab-content {
   background: rgba(255, 255, 255, 0.03);
   padding: 1.5rem;

@@ -36,7 +36,7 @@ const EditProfile = ({ onNameUpdate }) => {
     localStorage.setItem("user", JSON.stringify(res.data));
     alert("Profile updated!");
 
-     // 👇 Update dashboard if callback exists
+
     if (typeof onNameUpdate === "function") {
       onNameUpdate(res.data.name);
     }

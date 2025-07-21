@@ -37,7 +37,6 @@ const ConcertDetailsPage = () => {
 
   return (
     <div className="concert-details-page">
-      {/* 🎤 Banner Background */}
       <div
         className="concert-hero"
         style={{
@@ -57,7 +56,7 @@ const ConcertDetailsPage = () => {
         </div>
       </div>
 
-      {/* 🎵 About Section */}
+
       <div className="concert-details-container">
         <h2>About the Concert</h2>
         <p>"Get ready to groove! This concert features top-notch music, high energy, and a night you won’t forget.

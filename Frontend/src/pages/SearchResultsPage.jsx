@@ -7,7 +7,7 @@ const SearchResultsPage = () => {
 
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("searchResults")) || [];
-    const valid = data.filter(c => c && c._id); // optional sanity check
+    const valid = data.filter(c => c && c._id); 
     setResults(valid);
   }, []);
 

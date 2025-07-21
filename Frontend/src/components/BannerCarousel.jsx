@@ -28,7 +28,7 @@ const BannerCarousel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(goToNext, 5000); // Auto-slide every 5s
+    const interval = setInterval(goToNext, 5000);
     return () => clearInterval(interval);
   }, []);
 

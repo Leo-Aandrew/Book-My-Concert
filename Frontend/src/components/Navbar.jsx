@@ -11,7 +11,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
     const handleLinkClick = () => {
-    setMenuOpen(false); // Auto-close menu on link click
+    setMenuOpen(false); 
   };
 
   const handleLogout = () => {
@@ -58,7 +58,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Search Bar (visible only on desktop) */}
+    
       <form className="navbar-search" onSubmit={handleSearch}>
         <input
           type="text"
@@ -69,12 +69,12 @@ const Navbar = () => {
         <button type="submit">🔍</button>
       </form>
 
-      {/* Hamburger Toggle Button */}
+    
       <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? "✖" : "☰"}
       </button>
 
-      {/* Nav Links */}
+      
       <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
         {!isLoggedIn ? (
           <>

@@ -6,13 +6,13 @@ body {
 }
 
 a {
-  color: #4fc3f7; /* Neon Blue */
+  color: #4fc3f7;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #80e1ff; /* Lighter Neon Blue for hover */
+  color: #80e1ff; 
 }
 
 button {

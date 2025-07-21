@@ -3,7 +3,7 @@
   color: #f4f4f4;
 }
 
-/* 🎤 Background Hero Section */
+
 .concert-hero {
   height: 400px;
   background-size: cover;
@@ -45,7 +45,7 @@
   background-color: #e02050;
 }
 
-/* 📃 Concert Details Content */
+
 .concert-details-container {
   background-color: #121212;
   padding: 2rem;
@@ -68,7 +68,7 @@
   margin-bottom: 1rem;
 }
 
-/* 📱 Mobile Responsive Styles */
+
 @media (max-width: 768px) {
   .concert-hero {
     flex-direction: column;

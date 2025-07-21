@@ -6,12 +6,12 @@ import BannerCarousel from "../components/BannerCarousel";
 import "../styles/HomePage.css";
 
 const HomePage = () => {
-  const [concerts, setConcerts] = useState([]); // For upcoming concerts
+  const [concerts, setConcerts] = useState([]);
   const [searchArtist, setSearchArtist] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [allConcerts, setAllConcerts] = useState([]);
-  const [artists, setArtists] = useState([]); // For top artists
+  const [artists, setArtists] = useState([]);
 
   useEffect(() => {
     const fetchConcerts = async () => {
@@ -57,7 +57,7 @@ const HomePage = () => {
       filtered = filtered.filter((c) => c.location === selectedCity);
     }
 
-    setConcerts(filtered.slice(0, 3)); // limit preview to top 3 matches
+    setConcerts(filtered.slice(0, 3));
   };
 
   return (
@@ -67,7 +67,7 @@ const HomePage = () => {
         <BannerCarousel />
       </header>
 
-      {/* 🎫 Upcoming Concerts Preview */}
+
       <section className="featured">
         <h2>Upcoming Concerts</h2>
         <div className="concert-grid">
@@ -78,7 +78,7 @@ const HomePage = () => {
         <Link to="/concerts" className="view-all-btn">View All Concerts →</Link>
       </section>
 
-      {/* 🔍 Search by Artist / Genre / City */}
+
       <section className="search-section">
         <h2>Find Concerts</h2>
         <div className="search-filters">
@@ -107,7 +107,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* 🌟 Top Artists */}
 
       <section className="top-artists">
         <h2>Top Artists</h2>
@@ -148,7 +147,7 @@ const HomePage = () => {
                 },
               ];
 
-              // Duplicate for seamless loop
+             
               const duplicated = [...staticArtists, ...staticArtists];
 
               return duplicated.map((artist, index) => (
@@ -163,7 +162,7 @@ const HomePage = () => {
       </section>
 
 
-      {/* 📍 How It Works */}
+
       <section className="timeline-section">
         <h2 className="timeline-title">How It Works – Your Booking Journey</h2>
         <div className="timeline-container">

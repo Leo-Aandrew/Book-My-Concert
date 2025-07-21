@@ -76,7 +76,7 @@
 @media (max-width: 768px) {
   .login-container {
     padding: 1rem;
-    height: auto; /* Avoid full viewport height on mobile */
+    height: auto;
     min-height: 100vh;
   }
 

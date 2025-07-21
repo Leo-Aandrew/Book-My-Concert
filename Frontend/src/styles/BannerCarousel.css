@@ -11,7 +11,7 @@
 .carousel-slides {
   display: flex;
   transition: transform 0.6s ease-in-out;
-  width: 300%; /* 3 slides */
+  width: 300%; 
 }
 
 .carousel-slide {
@@ -22,12 +22,12 @@
 .carousel-slide img {
    width: 35%;
   height: auto;
-  object-fit: cover; /* or contain depending on what you want */
-  max-height: 400px; /* adjust height as needed */
+  object-fit: cover; 
+  max-height: 400px; 
   border-radius: 10px;
 }
 
-/* Arrows */
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -50,7 +50,6 @@
   right: 20px;
 }
 
-/* Dots */
 .carousel-dots {
   position: absolute;
   bottom: 15px;

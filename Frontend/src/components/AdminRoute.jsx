@@ -1,4 +1,3 @@
-// AdminRoute.jsx
 import { Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -11,7 +10,7 @@ const AdminRoute = ({ children }) => {
   }, []);
 
   if (role === null) {
-    return <div>Loading...</div>; // or a spinner
+    return <div>Loading...</div>;
   }
 
   return role === "admin" ? children : <Navigate to="/login" />;

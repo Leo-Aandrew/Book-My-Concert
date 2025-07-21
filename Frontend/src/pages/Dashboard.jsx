@@ -18,7 +18,6 @@ const Dashboard = () => {
   }
 
   if (email) {
-    // fetch full user info from backend
     axios
       .get(`http://localhost:8000/api/auth/users/${email}`)
       .then((res) => {
@@ -28,7 +27,7 @@ const Dashboard = () => {
         console.warn("Failed to fetch user details:", err);
       });
 
-    // fetch bookings for this user
+
     axios
       .get(`http://localhost:8000/bookings?bookedBy=${email}`)
       .then((res) => {
@@ -47,7 +46,7 @@ const Dashboard = () => {
 
   try {
     await axios.delete(`http://localhost:8000/bookings/${id}`);
-    setBookings((prev) => prev.filter((b) => b._id !== id)); // use _id if MongoDB
+    setBookings((prev) => prev.filter((b) => b._id !== id)); 
     alert("Ticket cancelled.");
   } catch (err) {
     console.error(err);

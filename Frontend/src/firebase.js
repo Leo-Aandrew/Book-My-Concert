@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-   apiKey: "AIzaSyAOcLRUoZS8UZdnwdNzVud_WLr4x2yjAs0",
+  apiKey: "AIzaSyAOcLRUoZS8UZdnwdNzVud_WLr4x2yjAs0",
   authDomain: "music-concert-booking.firebaseapp.com",
   projectId: "music-concert-booking",
   storageBucket: "music-concert-booking.firebasestorage.app",

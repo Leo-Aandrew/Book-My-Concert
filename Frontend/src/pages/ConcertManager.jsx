@@ -19,7 +19,7 @@ const ConcertManager = () => {
   const [formData, setFormData] = useState(initialConcert);
   const [editingId, setEditingId] = useState(null);
 
-  // Fetch all concerts from backend
+
   const fetchConcerts = async () => {
     try {
       const res = await axios.get("http://localhost:8000/concerts");
@@ -56,22 +56,7 @@ const ConcertManager = () => {
     }
   };
 
-  // const handleSubmit = async () => {
-  //   try {
-  //     if (editingId) {
-  //       await axios.put(`http://localhost:8000/concerts/${editingId}`, formData);
-  //       alert("Concert updated successfully.");
-  //     } else {
-  //       await axios.post("http://localhost:8000/concerts", formData);
-  //       alert("Concert added successfully.");
-  //     }
-  //     setFormData(initialConcert);
-  //     setEditingId(null);
-  //     fetchConcerts();
-  //   } catch (error) {
-  //     console.error("Error submitting concert:", error);
-  //   }
-  // };
+
 
 const handleSubmit = async () => {
   try {
@@ -81,7 +66,7 @@ const handleSubmit = async () => {
       if (
         typeof formData[key] === "object" &&
         !Array.isArray(formData[key]) &&
-        !(formData[key] instanceof File) // 👈 exclude File object
+        !(formData[key] instanceof File) 
       ) {
         for (let subKey in formData[key]) {
           form.append(`${key}.${subKey}`, formData[key][subKey]);
@@ -91,7 +76,7 @@ const handleSubmit = async () => {
       }
     }
 
-    // ✅ Append the image file explicitly
+
     if (formData.image instanceof File) {
       form.append("image", formData.image);
     }
@@ -158,9 +143,6 @@ const handleSubmit = async () => {
 
         <label>Genre</label>
         <input name="genre" value={formData.genre} onChange={handleChange} />
-
-        {/* <label>Image URL</label>
-        <input name="image" value={formData.image} onChange={handleChange} /> */}
 
         <label>Upload Image</label>
         <input

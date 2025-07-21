@@ -36,7 +36,7 @@ const MobileTicket = () => {
     <div className="ticket-wrapper">
       <div className="ticket-scroll-container">
       <div className="ticket-horizontal" ref={ticketRef}>
-        {/* LEFT SIDE - QR and ID */}
+
         <div className="ticket-left">
           <div className="ticket-number">{ticketId}</div>
           <div className="qr-box">
@@ -49,7 +49,6 @@ const MobileTicket = () => {
 
         </div>
 
-        {/* RIGHT SIDE - Details */}
         <div className="ticket-right">
           <div className="concert-title">{booking.artist}</div>
           <div className="concert-tour">Live Concert</div>

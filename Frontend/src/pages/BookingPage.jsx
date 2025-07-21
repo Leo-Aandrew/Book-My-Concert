@@ -4,7 +4,7 @@ import axios from "axios";
 import "../styles/BookingPage.css";
 
 const BookingPage = () => {
-  const { id } = useParams(); // This is MongoDB _id
+  const { id } = useParams(); 
   const [concert, setConcert] = useState(null);
   const [ticketType, setTicketType] = useState("standard");
   const [quantity, setQuantity] = useState(1);
@@ -12,7 +12,7 @@ const BookingPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
 
-  // Fetch concert details from backend
+
   useEffect(() => {
     const fetchConcert = async () => {
       try {
@@ -58,10 +58,10 @@ const BookingPage = () => {
 
     setIsSubmitting(true);
     try {
-      // Save booking
+  
       await axios.post("http://localhost:8000/bookings", bookingDetails);
 
-      // Update concert availability
+
       await axios.patch(`http://localhost:8000/concerts/${concert._id}`, {
         availableTickets: updatedTickets,
       });
