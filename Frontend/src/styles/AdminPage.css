@@ -1,0 +1,94 @@
+/* styles/AdminPanel.css */
+
+.admin-panel {
+  padding: 2rem;
+  background-color: #121829;
+  color: #e0f7fa;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.admin-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4fc3f7;
+  text-align: center;
+}
+
+.admin-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.admin-tabs button {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  background: #1f2a3c;
+  color: #e0f7fa;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-tabs button:hover {
+  background: #263446;
+}
+
+.admin-tabs .active {
+  background: #4fc3f7;
+  color: #000;
+  box-shadow: 0 0 10px #4fc3f7;
+}
+
+.admin-content {
+  background: #1a2235;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(79, 195, 247, 0.2);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .admin-panel {
+    padding: 1rem;
+  }
+
+  .admin-panel h2 {
+    font-size: 1.6rem;
+  }
+
+  .admin-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .admin-tabs button {
+    width: 90%;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .admin-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-panel h2 {
+    font-size: 1.4rem;
+  }
+
+  .admin-tabs button {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .admin-content {
+    font-size: 0.95rem;
+  }
+}

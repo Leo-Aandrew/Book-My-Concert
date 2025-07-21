@@ -1,0 +1,171 @@
+.ticket-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a12;
+  min-height: 100vh;
+}
+
+.ticket-horizontal {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #00f0ff;
+  box-shadow: 0 0 15px #00f0ff;
+}
+
+/* LEFT SIDE - Light Neon Blue Background */
+.ticket-left {
+  width: 35%;
+  background: linear-gradient(135deg, #0ff0fc, #00c2ff);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+  text-align: center;
+  position: relative;
+}
+
+.ticket-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.qr-box {
+  background: #fff;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 0 10px #00e0ff;
+}
+
+.ticket-note {
+  font-size: 0.65rem;
+  color: #000;
+  margin-top: 1rem;
+}
+
+/* RIGHT SIDE - Dark Background with Neon Glow */
+.ticket-right {
+  width: 65%;
+  background: linear-gradient(135deg, #0a0f1f, #050a18);
+  padding: 1.5rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.concert-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00f0ff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+.concert-tour {
+  font-size: 1rem;
+  color: #00c8ff;
+  margin-bottom: 0.8rem;
+}
+
+.concert-datetime,
+.concert-venue,
+.concert-info,
+.concert-total {
+  font-size: 1rem;
+  color: #e0f7ff;
+  margin-bottom: 0.5rem;
+}
+
+.concert-total {
+  font-weight: bold;
+  color: #00ffe7;
+  text-shadow: 0 0 3px #00ffe7;
+}
+
+/* Button */
+.download-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.4rem;
+  background: #00f0ff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00f0ff;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #33fbff;
+  box-shadow: 0 0 15px #33fbff;
+}
+
+/* Scrollable wrapper for mobile */
+.ticket-scroll-container {
+  width: 60%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.ticket-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Keep the ticket layout same but make it scrollable */
+.ticket-horizontal {
+  min-width: 800px; /* Same as max-width used in desktop */
+}
+
+/* Mobile tweaks if needed */
+@media (max-width: 768px) {
+  .ticket-wrapper {
+    padding: 1rem;
+  }
+
+  .ticket-left {
+    padding: 1rem;
+  }
+
+  .ticket-right {
+    padding: 1rem;
+  }
+
+  .concert-title {
+    font-size: 1.5rem;
+  }
+
+  .concert-datetime,
+  .concert-venue,
+  .concert-info,
+  .concert-total,
+  .concert-tour {
+    font-size: 0.9rem;
+  }
+
+  .ticket-note {
+    font-size: 0.6rem;
+  }
+
+  .ticket-number {
+    font-size: 1.2rem;
+  }
+
+  .ticket-scroll-container {
+  width: 100%;
+}
+}

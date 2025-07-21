@@ -1,0 +1,147 @@
+.navbar {
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  color: #f4f4f4;
+  box-shadow: 0 2px 15px rgba(79, 195, 247, 0.2); /* Neon Blue Glow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo img {
+
+  width:60px;
+  height:60px;
+}
+
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  gap: 0.5rem;
+}
+
+.navbar-search input {
+  padding: 10px 16px;
+  width: 280px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+  background-color: #1e1e2f;
+  color: #f4f4f4;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-search input:focus {
+  box-shadow: 0 0 8px #4fc3f7;
+}
+
+.navbar-search button {
+  padding: 10px 14px;
+  background-color: #4fc3f7;
+  border: none;
+  color: #0d0d0d;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-search button:hover {
+  background-color: #80e1ff;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #4fc3f7;
+  text-decoration: none;
+  text-shadow: 0 0 6px #4fc3f7;
+}
+
+.logout-btn {
+  background: transparent;
+  color: #4fc3f7;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: #4fc3f7;
+  text-shadow: 0 0 6px #4fc3f7;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #4fc3f7;
+  border-radius: 3px;
+}
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar-search {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    background-color: #0d0d0d;
+    border: none;
+    color: #80e1ff;
+    font-size: 2rem;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #111;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    display: none;
+    border-radius: 8px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links li {
+    padding: 10px 0;
+    text-align: right;
+  }
+
+  .navbar-links li button.logout-btn {
+    width: 100%;
+    text-align: right;
+  }
+}

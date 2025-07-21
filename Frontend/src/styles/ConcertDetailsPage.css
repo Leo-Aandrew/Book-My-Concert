@@ -1,0 +1,138 @@
+.concert-details-page {
+  font-family: "Segoe UI", sans-serif;
+  color: #f4f4f4;
+}
+
+/* 🎤 Background Hero Section */
+.concert-hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  position: relative;
+}
+
+.concert-hero-content {
+  max-width: 600px;
+}
+
+.concert-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.concert-hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.book-btn {
+  background-color: #ff3366;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #e02050;
+}
+
+/* 📃 Concert Details Content */
+.concert-details-container {
+  background-color: #121212;
+  padding: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+}
+
+.concert-details-container h2 {
+  color: #4fc3f7;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.concert-details-container p {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* 📱 Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .concert-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5rem;
+    height: auto;
+    text-align: left;
+  }
+
+  .concert-hero-content {
+    max-width: 100%;
+  }
+
+  .concert-hero h1 {
+    font-size: 2rem;
+  }
+
+  .concert-hero p {
+    font-size: 1rem;
+  }
+
+  .book-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .concert-details-container {
+    padding: 1.5rem;
+  }
+
+  .concert-details-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .concert-details-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .concert-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .concert-hero p {
+    font-size: 0.95rem;
+  }
+
+  .book-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .concert-details-container {
+    padding: 1rem;
+  }
+
+  .concert-details-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .concert-details-container p {
+    font-size: 0.95rem;
+  }
+}

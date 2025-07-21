@@ -1,0 +1,78 @@
+.confirmation-page {
+  min-height: 100vh;
+  background-color: #121222;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.confirmation-box {
+  background: #23233b;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  width: 100%;
+}
+
+.confirmation-box h2 {
+  margin-bottom: 1rem;
+  color: #a0d7ff;
+}
+
+.button-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.view-ticket-btn,
+.email-btn {
+  background-color: #4fc3f7;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-ticket-btn:hover,
+.email-btn:hover {
+  background-color: #039be5;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .confirmation-page {
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .confirmation-box {
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .confirmation-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .view-ticket-btn,
+  .email-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+    width: 100%;
+  }
+}

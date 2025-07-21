@@ -1,0 +1,249 @@
+/* Hero Banner */
+.banner{
+  padding: 20px;
+}
+/* Upcoming Concerts */
+.featured {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #1e1e2f;
+}
+
+.featured h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #4fc3f7;
+}
+
+.concert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.view-all-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #4fc3f7;
+  font-size: 1.1rem;
+}
+
+.view-all-btn:hover{
+  text-decoration: none;
+}
+
+/* Search Section */
+.search-section {
+  padding: 2rem;
+  background-color: #2a2a40;
+  text-align: center;
+}
+
+.search-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #4fc3f7;
+}
+
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.search-filters input,
+.search-filters select,
+.search-filters button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: #1e1e2f;
+  color: #f4f4f5;
+  border: 1px solid #3b3b5b;
+}
+
+.search-filters button {
+  background-color: #4fc3f7;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.search-filters button:hover {
+  background-color: #80e1ff;
+}
+
+/* Top Artists */
+.top-artists {
+  padding: 3rem 2rem;
+  background-color: #1e1e2f;
+  text-align: center;
+  overflow: hidden; /* Slider stays within container */
+}
+
+.top-artists h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4fc3f7;
+}
+
+/* Slider Container */
+.artist-slider-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  
+}
+
+/* Track with scroll animation */
+.artist-slider-track {
+  display: flex;
+  gap: 2rem;
+  animation: scrollSlider 30s linear infinite;
+  width: max-content;
+  
+}
+
+/* Infinite horizontal scroll */
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Card Styling */
+.artist-card {
+  width: 160px;
+  text-align: center;
+  background-color: #2a2a40;
+  border-radius: 12px;
+  padding: 1rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.artist-card:hover {
+  transform: scale(1.05);
+}
+
+/* Artist Image - Circular with Neon Border */
+.artist-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+  border: 3px solid #4fc3f7;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Artist Name in Neon Blue */
+.artist-card p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 0.3rem;
+
+}
+
+
+/* How it Works Timeline */
+.timeline-section {
+  background-color: #1c1b1f;
+  color: #f4f4f4;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.timeline-title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #4fc3f7;
+  font-weight: bold;
+}
+
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.timeline-step {
+  position: relative;
+  background-color: #1e1e2f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 4px 16px rgba(79, 195, 247, 0.3);
+  z-index: 1;
+  text-align: center;
+}
+
+.timeline-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #4fc3f7;
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.timeline-line {
+  width: 60px;
+  height: 3px;
+  background-color: #4fc3f7;
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+
+  .featured {
+  padding: 1rem 2rem;
+
+}  
+
+.featured h2 {
+
+  font-size: 1.8rem;
+
+}
+
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-line {
+    width: 3px;
+    height: 60px;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+  }
+}

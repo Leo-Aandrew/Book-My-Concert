@@ -1,0 +1,113 @@
+.concert-card {
+  background-color: #2a2a40;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(79, 195, 247, 0.2); /* Neon Blue Glow */
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #f4f4f5;
+}
+
+.concert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(79, 195, 247, 0.4);
+}
+
+.concert-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.concert-info {
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.concert-info h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.venue,
+.datetime,
+.prices {
+  font-size: 0.9rem;
+  color: #a0aec0;
+}
+
+.details-button {
+  margin-top: auto;
+  padding: 8px 12px;
+  text-align: center;
+  background-color: #4fc3f7;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #4fc3f7;
+}
+
+.details-button:hover {
+  background-color: #80e1ff;
+  box-shadow: 0 0 16px #80e1ff;
+  color:#000000;
+  text-decoration: none;
+}
+
+
+
+/* ✅ Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+  .concert-card {
+    max-width: 90%;
+  }
+
+  .concert-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .venue,
+  .datetime,
+  .prices {
+    font-size: 0.85rem;
+  }
+
+  .details-button {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .concert-card {
+    max-width: 100%;
+  }
+
+  .concert-info {
+    padding: 0.8rem;
+    gap: 0.4rem;
+  }
+
+  .concert-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .venue,
+  .datetime,
+  .prices {
+    font-size: 0.8rem;
+  }
+
+  .details-button {
+    padding: 7px 10px;
+    font-size: 0.85rem;
+  }
+}

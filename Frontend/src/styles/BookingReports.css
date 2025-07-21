@@ -1,0 +1,117 @@
+.booking-reports {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.booking-reports input {
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: #1e293b;
+  color: #fff;
+}
+
+.stats-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background-color: #1e1e2f;
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 200px;
+  color: #ffffff;
+  box-shadow: 0 0 10px #4fc3f7;
+}
+
+.stat-card h3{
+  color: #7dd3fc;
+  font-size: 1.5rem;
+}
+
+ 
+/* 🔁 Scrollable Table Wrapper */
+.booking-table {
+  width: 100%;
+  overflow-x: auto;         /* Makes the table scrollable */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
+
+.booking-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.booking-table th,
+.booking-table td {
+  border: 1px solid #334155;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.booking-table th {
+  background-color: #1e293b;
+  color: #7dd3fc;
+}
+
+.booking-table tr:nth-child(even) {
+  background-color: #1e293b;
+}
+
+/* ✅ Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  .booking-reports {
+    padding: 1rem;
+  }
+
+  .stat-card {
+    flex: 1 1 100%;
+  }
+
+  .booking-table table {
+    font-size: 0.85rem;
+    min-width: 100%;
+  }
+
+  .booking-table th,
+  .booking-table td {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-reports input{
+    width: 95%;
+  }
+
+  .booking-reports h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .stat-card h3 {
+    font-size: 1rem;
+  }
+
+  .stat-card p {
+    font-size: 0.9rem;
+  }
+
+  .booking-table {
+    margin-top: 1rem;
+  }
+
+  .booking-table table {
+    font-size: 0.8rem;
+    min-width: 480px;
+  }
+}

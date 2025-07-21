@@ -1,0 +1,172 @@
+{
+  "concerts": [
+    {
+      "id": "1",
+      "artist": "Anirudh",
+      "venue": "Chennai Stadium",
+      "location": "Chennai",
+      "genre": "Pop",
+      "date": "2025-08-15",
+      "time": "6:00 PM",
+      "ticketPrice": {
+        "standard": 999,
+        "vip": 1999
+      },
+      "availableTickets": {
+        "standard": 81,
+        "vip": 50
+      },
+      "image": "assets/hiphop.jpeg"
+    },
+    {
+      "id": "2",
+      "artist": "Vijay Antony",
+      "venue": "Bangalore Arena",
+      "location": "Bangalore",
+      "genre": "Rock",
+      "date": "2025-09-10",
+      "time": "7:30 PM",
+      "ticketPrice": {
+        "standard": 1499,
+        "vip": 2499
+      },
+      "availableTickets": {
+        "standard": 119,
+        "vip": 60
+      },
+      "image": "assets/hiphop.jpeg"
+    },
+    {
+      "id": "3",
+      "artist": "AR Rahman",
+      "venue": "Delhi Grounds",
+      "location": "Delhi",
+      "genre": "Classical",
+      "date": "2025-10-05",
+      "time": "5:00 PM",
+      "ticketPrice": {
+        "standard": 899,
+        "vip": 1599
+      },
+      "availableTickets": {
+        "standard": 80,
+        "vip": 40
+      },
+      "image": "assets/hiphop.jpeg"
+    },
+    {
+      "id": "4",
+      "artist": "Sid Sriram",
+      "venue": "Mumbai Music Hall",
+      "location": "Mumbai",
+      "genre": "Melody",
+      "date": "2025-09-25",
+      "time": "9:00 PM",
+      "ticketPrice": {
+        "standard": 1299,
+        "vip": 2199
+      },
+      "availableTickets": {
+        "standard": 90,
+        "vip": 30
+      },
+      "image": "assets/hiphop.jpeg"
+    },
+    {
+      "id": "5",
+      "artist": "Yuvan",
+      "venue": "Hyderabad Convention Center",
+      "location": "Hyderabad",
+      "genre": "Rock",
+      "date": "2025-08-30",
+      "time": "6:30 PM",
+      "ticketPrice": {
+        "standard": 899,
+        "vip": 1699
+      },
+      "availableTickets": {
+        "standard": 75,
+        "vip": 35
+      },
+      "image": "assets/hiphop.jpeg"
+    },
+    {
+      "id": "62ce",
+      "artist": "Hiphop Tamila",
+      "date": "2025-08-02",
+      "time": "09:00",
+      "venue": "Loyola College",
+      "location": "Chennai",
+      "ticketPrice": {
+        "standard": 999,
+        "vip": 2999
+      },
+      "availableTickets": {
+        "standard": 199,
+        "vip": 50
+      },
+      "genre": "Pop",
+      "image": "assets/hiphop.jpeg"
+    }
+  ],
+  "topArtists": [
+    {
+      "id": "1",
+      "name": "Anirudh",
+      "image": "assets/aadhi.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Vijay Antony",
+      "image": "assets/aadhi.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "AR Rahman",
+      "image": "assets/aadhi.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Sid Sriram",
+      "image": "assets/aadhi.jpeg"
+    },
+    {
+      "id": "5",
+      "name": "Yuvan",
+      "image": "assets/aadhi.jpeg"
+    },
+    {
+      "id": "6",
+      "name": "Hiphop Tamila",
+      "image": "assets/aadhi.jpeg"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "973d",
+      "concertId": "1",
+      "artist": "Anirudh",
+      "venue": "Chennai Stadium",
+      "location": "Chennai",
+      "ticketType": "standard",
+      "quantity": 1,
+      "totalPrice": 999,
+      "bookedBy": "leo@gmail.com",
+      "paymentMethod": "GPay",
+      "date": "2025-07-09T05:23:37.116Z"
+    },
+    {
+      "id": "35c5",
+      "concertId": "62ce",
+      "artist": "Hiphop Tamila",
+      "venue": "Loyola College",
+      "location": "Chennai",
+      "ticketType": "standard",
+      "quantity": 1,
+      "totalPrice": 999,
+      "bookedBy": "leo@gmail.com",
+      "paymentMethod": "GPay",
+      "date": "2025-07-09T05:24:13.899Z"
+    }
+  ]
+}

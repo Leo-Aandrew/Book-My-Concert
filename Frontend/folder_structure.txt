@@ -1,0 +1,49 @@
+npm create vite@latest concert-booking --template react
+cd concert-booking
+npm install
+npm install react-router-dom
+npm install -g json-server
+
+npm install html2canvas
+npm install qrcode.react
+
+
+
+TO RUN:
+json-server --watch db.json --port 8000
+npm run dev
+
+
+
+concert-booking/
+├── public/
+├── src/
+│   ├── assets/               → images, icons, logos
+│   ├── components/           → reusable components (Navbar, Card, Footer, etc.)
+│   ├── data/                 → temporary dummy data (concerts, users)
+│   ├── pages/                → all main screens/pages
+│   ├── utils/                → helper functions, API calls
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── vite.config.js
+
+
+
+
+HomePage.jsx – show banner, featured concerts
+
+LoginPage.jsx / SignupPage.jsx – basic form + social login (add later)
+
+ConcertListPage.jsx – shows list of concerts from mock data
+
+ConcertDetailsPage.jsx – detailed view + "Book Now" button
+
+BookingPage.jsx – select seats, view price
+
+DashboardPage.jsx – view bookings, edit profile
+
+AdminPage.jsx – show/manage concerts (dummy for now)
+
+ConfirmationPage.jsx – show ticket details, QR code

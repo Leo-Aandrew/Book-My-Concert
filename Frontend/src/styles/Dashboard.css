@@ -1,0 +1,89 @@
+.dashboard-container {
+  padding: 2rem;
+  background-color: #1e1e2f;
+  color: #f0f8ff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-container h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+/* Tabs */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-buttons button {
+  background-color: #1e1e2f;
+  color: #f0f8ff;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #00e5ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tab-buttons button.active,
+.tab-buttons button:hover {
+  background-color: #4fc3f7;
+  color: #1e1e2f;
+  font-weight: bold;
+}
+
+/* Content */
+.tab-content {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .dashboard-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .tab-buttons button {
+    width: 90%;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .tab-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container h3 {
+    font-size: 1.3rem;
+  }
+
+  .tab-buttons button {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .tab-content {
+    font-size: 0.95rem;
+  }
+}
