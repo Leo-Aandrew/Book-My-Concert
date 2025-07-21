@@ -1,4 +1,3 @@
-// models/Concert.js
 const mongoose = require("mongoose");
 
 const concertSchema = new mongoose.Schema({

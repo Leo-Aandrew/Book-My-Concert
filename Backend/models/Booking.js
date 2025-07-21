@@ -1,8 +1,7 @@
-// models/Booking.js
 const mongoose = require("mongoose");
 
 const bookingSchema = new mongoose.Schema({
-  concertId: String, // store concert._id from frontend
+  concertId: String, 
   artist: String,
   venue: String,
   location: String,

@@ -12,7 +12,7 @@ const {
   updateTickets
 } = require("../controllers/concertController");
 
-// 🔧 Setup Multer storage
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "uploads/");
@@ -25,11 +25,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// 🔄 Use upload.single() for POST route
+
 router.post("/", upload.single("image"), createConcert);
 
 
-// Other routes
+
 router.get("/", getConcerts);
 router.put("/:id", upload.single("image"), updateConcert);
 router.delete("/:id", deleteConcert);
