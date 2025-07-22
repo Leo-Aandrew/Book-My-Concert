@@ -13,7 +13,7 @@
 
 .navbar-logo img {
 
-  width:60px;
+  width:350px;
   height:60px;
 }
 
@@ -22,16 +22,16 @@
   display: flex;
   align-items: center;
   margin-right: 2rem;
-  gap: 0.5rem;
+  
 }
 
 .navbar-search input {
   padding: 10px 16px;
   width: 280px;
-  border-radius: 6px;
+
   border: none;
   font-size: 0.95rem;
-  background-color: #1e1e2f;
+  background-color: #25253a;
   color: #f4f4f4;
   outline: none;
   transition: box-shadow 0.3s ease;
@@ -42,12 +42,12 @@
 }
 
 .navbar-search button {
-  padding: 10px 14px;
+  padding: 9px 16px;
   background-color: #4fc3f7;
   border: none;
   color: #0d0d0d;
   font-weight: 600;
-  border-radius: 6px;
+
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -110,6 +110,12 @@
   .navbar-search {
     display: none;
   }
+
+  .navbar-logo img {
+
+  width:200px;
+  height:60px;
+}
 
   .hamburger {
     display: block;

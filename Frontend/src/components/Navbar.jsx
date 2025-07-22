@@ -54,9 +54,10 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/" onClick={handleLinkClick}>
-          <img src="/logo.png" alt="logo" />
+        <img src="/logo1.jpeg" alt="logo" />
         </Link>
       </div>
+      
 
     
       <form className="navbar-search" onSubmit={handleSearch}>
